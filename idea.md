@@ -128,3 +128,8 @@ Ana: Tilki + büyüteç + yeşil check + MILK kartonu + ilaç şişeleri. Renkle
 
 ## Tablet screenshots (2026-10-09, English log)
 - 12 shots, 1920x1080 16:9 landscape PNG, all <250KB: store-tablet/en|tr|ru × (01_home, 02_detail, 03_add, 04_settings). UnitFoxTablet forced to 1920x1080 (portrait override caused SystemUI ANR — landscape native, healthy). Same fake den seed, reverted after, analyze clean, wm reset.
+
+## Privacy policy (2026-10-09) — Play URL requirement
+- `docs/privacy.html` (EN+TR+RU, offline-first claims, AdMob + OFF disclosure, permissions, contact). In-app link in Settings (url_launcher, external browser) + `privacy` string 5-lang.
+- AAB rebuilt v1.0.1+2 Foxpiry-signed (74.6MB). Pushed to GitHub main.
+- MANUAL STEP FOR MASTER: repo Settings → Pages → Deploy from branch → main + /docs → URL https://freakazoid41.github.io/foxpiry/privacy.html → paste into Play Console + verify in-app link.

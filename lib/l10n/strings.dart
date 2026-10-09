@@ -325,6 +325,13 @@ class AppStrings {
       'ru': 'Аллергены',
       'hi': 'एलर्जेन',
     },
+    'privacy': {
+      'tr': 'Gizlilik Politikası',
+      'en': 'Privacy Policy',
+      'fr': 'Politique de confidentialité',
+      'ru': 'Политика конфиденциальности',
+      'hi': 'गोपनीयता नीति',
+    },
   };
 
   final String lang;

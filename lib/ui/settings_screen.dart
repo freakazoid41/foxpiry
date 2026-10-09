@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../core/theme.dart';
 import '../data/store.dart';
 import '../l10n/strings.dart';
+
+/// Public policy URL — same link goes into the Play Console listing.
+const _privacyUrl = 'https://freakazoid41.github.io/foxpiry/privacy.html';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -85,6 +89,17 @@ class SettingsScreen extends StatelessWidget {
           onPressed: () => context.read<Store>().clearExpired(),
           icon: const Icon(Icons.cleaning_services),
           label: Text(s.get('clearExpired')),
+        ),
+        ListTile(
+          leading: const Icon(Icons.privacy_tip_outlined),
+          title: Text(s.get('privacy')),
+          trailing: const Icon(Icons.open_in_new, size: 18),
+          onTap: () async {
+            final uri = Uri.parse(_privacyUrl);
+            try {
+              await launchUrl(uri, mode: LaunchMode.externalApplication);
+            } catch (_) {}
+          },
         ),
         const SizedBox(height: 24),
         Center(

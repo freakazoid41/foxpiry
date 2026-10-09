@@ -1,0 +1,8 @@
+# Foxpiry native splash config
+# run: dart run flutter_native_splash:create
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/branding/splash_image.png
+  android: true
+  ios: true
+  web: false

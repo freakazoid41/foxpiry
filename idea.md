@@ -134,3 +134,4 @@ Ana: Tilki + büyüteç + yeşil check + MILK kartonu + ilaç şişeleri. Renkle
 - AAB rebuilt v1.0.1+2 Foxpiry-signed (74.6MB). Pushed to GitHub main.
 - MANUAL STEP FOR MASTER: repo Settings → Pages → Deploy from branch → main + /docs → URL https://freakazoid41.github.io/foxpiry/privacy.html → paste into Play Console + verify in-app link.
 - Pages is LIVE (verified 2026-10-09, full EN+TR+RU text served). Paste the URL into Play Console now.
+

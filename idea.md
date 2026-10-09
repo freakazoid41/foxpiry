@@ -117,6 +117,7 @@ Ana: Tilki + büyüteç + yeşil check + MILK kartonu + ilaç şişeleri. Renkle
 ## v1.0.1 store bundle (2026-10-09, English log)
 - pubspec bumped 1.0.0+1 → 1.0.1+2. AAB 71MB Foxpiry-signed (keytool verified), APK badging proves stamp: package com.foxpiry.app.foxpiry versionCode 2 versionName 1.0.1. Upload file: build/app/outputs/bundle/release/app-release.aab.
 - Emulator died mid-session (both PixelPlay boots exited); no device attached now.
+- GitHub: github.com/freakazoid41/foxpiry, branch main, pushed via HTTPS (osxkeychain, same as animalManagement/pawtether). Secrets excluded.
 
 ## Package rename (2026-10-09) — Play demands com.foxpry.app
 - applicationId + namespace + both Kotlin files moved to com.foxpry.app (old com.foxpiry.app.foxpiry dirs removed). Rebuilt AAB 71MB, badging proves package com.foxpry.app v1.0.1+2, Foxpiry-signed. NOTE: spelling is foxpry (no i) per Play Console message — permanent for this listing.

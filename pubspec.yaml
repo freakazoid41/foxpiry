@@ -1,7 +1,7 @@
 name: foxpiry
 description: "Foxpiry — smart expiry tracker: food, returns, warranty. Fox-sniffed dates."
 publish_to: 'none'
-version: 1.0.1+2
+version: 1.0.2+3
 
 environment:
   sdk: ^3.11.0

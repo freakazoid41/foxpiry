@@ -126,7 +126,11 @@ Ana: Tilki + büyüteç + yeşil check + MILK kartonu + ilaç şişeleri. Renkle
 - 12 shots, 1080x1920 9:16 PNG, all <400KB: store/en|tr|ru × (01_home, 02_detail Nutella+OFF card, 03_add, 04_settings). Fake den via TEMP SEED_SHOTS dart-define (6 items, Nutella barcode for live OFF backfill) — seed code FULLY REVERTED after, analyze clean, source matches shipped AAB again. Emulator forced to 1080x1920 via wm size for exact 9:16, reset after. Real AdMob creatives served during shots (fine — real app UI).
 - NOTE: screenshot APK (104MB, SEED build) is NOT the store binary. Store binary stays build/app/outputs/bundle/release/app-release.aab v1.0.1+2.
 
+## Production upload v1.0.2 (2026-11-01) — Play production access granted
+- pubspec 1.0.1+2 → 1.0.2+3. Fresh AAB 71MB, badging proves package com.foxpry.app versionCode 3 versionName 1.0.2, Foxpiry-signed. AdMob IDs unchanged (...~5448186579 + .../1009324670, existing entry is ours). Upload file: build/app/outputs/bundle/release/app-release.aab. After Play goes live: link AdMob to the public listing.
+
 ## Tablet screenshots (2026-10-09, English log)
+- pubspec 1.0.1+2 → 1.0.2+3. Fresh AAB 71MB, badging proves package com.foxpry.app versionCode 3 versionName 1.0.2, Foxpiry-signed. AdMob IDs unchanged (...~5448186579 + .../1009324670, existing entry is ours). Upload file: build/app/outputs/bundle/release/app-release.aab. After Play goes live: link AdMob to the public listing.
 - 12 shots, 1920x1080 16:9 landscape PNG, all <250KB: store-tablet/en|tr|ru × (01_home, 02_detail, 03_add, 04_settings). UnitFoxTablet forced to 1920x1080 (portrait override caused SystemUI ANR — landscape native, healthy). Same fake den seed, reverted after, analyze clean, wm reset.
 
 ## Privacy policy (2026-10-09) — Play URL requirement
@@ -134,4 +138,10 @@ Ana: Tilki + büyüteç + yeşil check + MILK kartonu + ilaç şişeleri. Renkle
 - AAB rebuilt v1.0.1+2 Foxpiry-signed (74.6MB). Pushed to GitHub main.
 - MANUAL STEP FOR MASTER: repo Settings → Pages → Deploy from branch → main + /docs → URL https://freakazoid41.github.io/foxpiry/privacy.html → paste into Play Console + verify in-app link.
 - Pages is LIVE (verified 2026-10-09, full EN+TR+RU text served). Paste the URL into Play Console now.
+- app-ads.txt VERIFIED LIVE 2026-10-18 at domain root (pub-1088997129209291 DIRECT ×2). If AdMob reports missing: wait ≤24h for crawl + confirm Play website URL sits on freakazoid41.github.io.
+
+## AdMob setup for com.foxpry.app (2026-10-18) — PENDING new IDs
+- AdMob asks to complete setup for package com.foxpry.app. Current binary holds App ID ...~5448186579 + banner .../1009324670 (created earlier, likely tied to another app entry).
+- Decision: register com.foxpry.app as NEW AdMob app (option 1) → AdMob issues NEW App ID → create fresh banner unit under it → Master sends both → rewire manifest + ads.dart + rebuild AAB v1.0.1+2 (same versionCode, not yet uploaded... verify before rebuild) + re-verify.
+- UPDATE 2026-10-18: existing "Foxpiry / Android" entry (...5448186579, 1 active unit, 153 req/7d) IS ours and already serving our builds → option 2 (attach to existing) is correct, no rewire needed. Blocker: Devam greyed on both options → store-link step ("Google Play Bağlantısı") unfinished. Fix in AdMob UI, nothing to change in code.
 

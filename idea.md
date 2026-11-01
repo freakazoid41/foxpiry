@@ -132,6 +132,9 @@ Ana: Tilki + büyüteç + yeşil check + MILK kartonu + ilaç şişeleri. Renkle
 ## v1.0.3 (2026-11-01) — Play rejected READ_MEDIA_IMAGES, removed it
 - Dropped READ_MEDIA_IMAGES from manifest (merged APK now has 0 READ_MEDIA_*). Gallery on API 33+ already goes through the system picker via image_picker; camera untouched. versionCode 4. AAB rebuilt Foxpiry-signed.
 
+## v1.0.4 (2026-11-01) — Play R8/resource-shrink nag, shrink enabled
+- isShrinkResources true (was false). AGP stays 8.11.1 Flutter-pinned — 9.0 skipped (toolchain risk, advisory only). Verified live on PixelPlay API 35: launcher icon renders, app boots, home + ads clean, zero ResourceNotFound. versionCode 5. AAB 71MB Foxpiry-signed.
+
 ## Tablet screenshots (2026-10-09, English log)
 - pubspec 1.0.1+2 → 1.0.2+3. Fresh AAB 71MB, badging proves package com.foxpry.app versionCode 3 versionName 1.0.2, Foxpiry-signed. AdMob IDs unchanged (...~5448186579 + .../1009324670, existing entry is ours). Upload file: build/app/outputs/bundle/release/app-release.aab. After Play goes live: link AdMob to the public listing.
 - 12 shots, 1920x1080 16:9 landscape PNG, all <250KB: store-tablet/en|tr|ru × (01_home, 02_detail, 03_add, 04_settings). UnitFoxTablet forced to 1920x1080 (portrait override caused SystemUI ANR — landscape native, healthy). Same fake den seed, reverted after, analyze clean, wm reset.
